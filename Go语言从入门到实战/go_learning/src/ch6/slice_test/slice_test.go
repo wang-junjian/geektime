@@ -1,3 +1,5 @@
+// How to find a type of an object in Go?
+// https://stackoverflow.com/questions/20170275/how-to-find-a-type-of-an-object-in-go
 package slice_test
 
 import (
@@ -21,6 +23,9 @@ func TestSliceInit(t *testing.T)  {
     c = append(c, i)
     fmt.Println(len(c), cap(c), reflect.TypeOf(c), c)
   }
+
+  d := make([]int, 10)
+  fmt.Println(d, len(d), cap(d))
 }
 
 func TestSliceShare(t *testing.T) {
